@@ -1,21 +1,21 @@
 {
-  "name": "example__landing",
+  "name": "ironchief",
   "version": "1.0.0",
-  "description": "this is landing tutorial",
+  "description": "this is start page",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sayshake/example__landing.git"
+    "url": "git+https://github.com/sayshake/ironchief.git."
   },
   "author": "Anton Ushakov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sayshake/example__landing/issues"
+    "url": "https://github.com/sayshake/ironchief/issues"
   },
-  "homepage": "https://github.com/sayshake/example__landing#readme",
+  "homepage": "https://github.com/sayshake/ironchief#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "github:gulpjs/gulp#4.0",
