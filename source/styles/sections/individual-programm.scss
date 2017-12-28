@@ -1,0 +1,91 @@
+.individual-programm{
+    min-height: 390px;
+    margin:  auto;
+    padding: 45px 0;    
+    
+    &__decription{
+        display: flex;
+    }
+    &__content{
+        margin: 0;
+        vertical-align: middle;
+    }
+    &__decription-col{
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px; 
+        margin-bottom: 20px;
+    }
+    &__decription-title{
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-family: "Roboto Condensed",sans-serif;
+        line-height: 1.2;
+        font-weight: 800;
+        font-style: italic;
+        color: #454545;
+    }
+    &__decription-text{
+        margin-bottom: 0;
+    }
+    &__list{
+        margin: 0;
+        padding:0;
+        
+    }
+    
+    &__item{
+        display: inline-block;
+        font-size: 1.5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .icon-dumbell{
+        margin-left: -1px;    
+        transform: scale(0.89);  
+        }
+    }
+    &__icon-container{
+    
+    }
+    
+    &__text-container{
+    
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    
+}
+.decription-col--left{
+    font-family: sans-serif;
+    line-height: 1.8;
+    text-align:right;
+}
+.decription-col--right{
+    text-align: left;
+}
+.worker {
+    text-align: center;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__image{
+        padding-right: 20px;
+    }
+    &__text {
+       text-align: left; 
+    }
+    &__name{
+        
+    }
+    &__info{
+        
+    }
+}

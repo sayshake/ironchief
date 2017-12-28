@@ -1,0 +1,47 @@
+.aboutUs{
+    margin:  auto;
+    padding: 45px 0;
+    
+    &__container-title{
+        padding-bottom: 30px;
+    }
+    &__title{
+        height: 171px;
+        width: 866px;
+        margin: auto;
+        background: url(../../images/ironchef-text.png) center center no-repeat;
+    }
+    &__text{
+        margin-top: 10px; 
+       
+    }
+    &__decription{
+        display: flex;
+        align-items: flex-start;
+        
+    }
+    &__decription-col{
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 10px; 
+        margin-bottom: 20px;
+        border-left: 10px solid #58a543;
+    }
+    &__decription-title{
+        margin-top: 0;
+    }
+    &__decription-text{
+        margin-bottom: 0;
+    }
+    
+}
+//    .container
+//        span.aboutUs__title
+//        p.aboutUs__text спонсор вашего сободного времени
+//        .aboutUs__decription
+//            .aboutUs__decription-col
+//                h3.aboutUs__decription-title Что такое Ironchef?
+//                p.aboutUs__decription-text Мы — команда профессиональных поваров и спортсменов, объединённая идеей здорового образа жизни и правильного питания.
+//            .aboutUs__decription-col
+//                h3.aboutUs__decription-title Что мы делаем?
+//                p.aboutUs__decription-text 

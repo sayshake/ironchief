@@ -1,0 +1,20 @@
+nav.nav
+                - var items =['Меню', 'Как это работает', 'о нас','блог', 'Контакты']
+                each item in items
+                    if item === 'Меню'
+                        li.dropdown
+                            a.nav__link(href="javascript:void(0)")= item 
+                                span.caret
+                            .dropdown-content
+                                a.dropdown__link(href="#") Общее меню
+                                a.dropdown__link(href="#") Спортивный рацион
+                                a.dropdown__link(href="#") Меню здорового питания
+                    else if item === 'о нас'
+                        li.dropdown
+                            a.nav__link(href="javascript:void(0)")= item 
+                                span.caret
+                            .dropdown-content
+                                    a.dropdown__link(href="#") О нас 
+                                    a.dropdown__link(href="#") Отзывы  
+                    else
+                        a.nav__link(href="#")= item

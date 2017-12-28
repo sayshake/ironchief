@@ -1,0 +1,93 @@
+.nav{
+    display: inline-flex;
+    padding-top: 2px;
+    font-size: 17px;
+    
+    &__link{
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        padding: 10px;
+        font-weight: 400;
+        font-family: "Roboto Condensed",sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        transition: .3s;
+        border: 1px solid transparent;
+
+        
+        &:hover,
+        &--active {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            color:#fff;
+            transition: .8s ease;
+            
+        }
+        &:after{
+            content: "";
+            background: #424242;
+            
+        }
+        &:last-child:after{
+            display: none;
+        }
+        
+    }
+}
+.caret{
+    color:#fff;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    &-content{
+        display: none;
+        position: absolute;
+        top: 51px;
+        left:5px;
+        border: 0;
+        box-shadow: none;
+        background-color: #2d2d35;
+        border-radius: 0;
+        position: absolute;   
+        min-width: 300px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    &__link{
+        display: block;
+        text-align: left;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 0 none;
+        white-space: normal;
+        text-transform: uppercase;
+        font-family: "Roboto Condensed",sans-serif;
+        font-weight: 400;
+        transition: .8s ease;
+        &:hover {
+            color: darken(#fff,40%);  
+        }
+    }
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ .dropdown-content .nav__link:hover {
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+        }
+

@@ -1,0 +1,28 @@
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize.scss/normalize";
+//основные файлы
+@import "global/mixins";
+@import "global/fonts";
+@import "global/vars";
+@import "global/base";
+@import "global/common";
+@import "global/sprite";
+@import "global/button";
+@import "global/icons";
+//секции проекта
+@import "sections/title";
+@import "sections/header";
+@import "sections/nav";
+@import "sections/offer";
+@import "sections/hero";
+@import "sections/about";
+@import "sections/aboutUs";
+@import "sections/health";
+@import "sections/promo";
+@import "sections/goods";
+@import "sections/individual-programm.scss";
+@import "sections/work.scss";
+@import "sections/footer.scss";
+
+
+

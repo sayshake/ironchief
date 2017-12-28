@@ -1,0 +1,46 @@
+- var linkItems = ['БыстроSlim (Ж)','БыстроSlim (Ж)','Еда для жизни (Ж)','Еда для жизни (М)','Зеленый'];
+- var menuItems = ['Стальной качок','Гора мышц','Рельеф','Супер-сушка','Тело мечты'];
+- var linkUrls = ['Блог стального шефа','Отзывы клиентов'];
+footer.footer
+    .footer__top
+        .container-md
+            .footer-row
+                .footer-logo
+                    a.logo(href="#"): span.logo__picture
+                .footer-menu 
+                    p.footer__text СПОРТИВНОЕ МЕНЮ
+                    ul.footer__links
+                        each menu in menuItems
+                            li.footer__social
+                                a.footer__social-link(href="#")=menu
+                .footer-menu
+                    p.footer__text МЕНЮ ЗДОРОВОГО ПИТАНИЯ 
+                    ul.footer__links
+                        each link in linkItems
+                            li.footer__social
+                                a.footer__social-link(href="#")=link
+                .footer-menu           
+                    p.footer__text КАК ЭТО РАБОТАЕТ 
+                    ul.footer__links
+                        each link in linkUrls
+                            li.footer__social
+                                a.footer__social-link(href="#")=link
+                .footer-contacts
+                    .phone.phone--footer
+                        span.phone__number.phone__number--footer +7 (800) 000-00-00
+                        a.button.header__button.button--red.button--text-uppercase(href="#") Обратный звонок
+                .footer__social-icons
+                    a.social-icons__link(href="#") 
+                        i.fa.fa-facebook(aria-hidden=true)
+                    a.social-icons__link(href="#")    
+                        i.fa.fa-vk(aria-hidden=true)
+                    a.social-icons__link(href="#")    
+                        i.fa.fa-instagram(aria-hidden=true)
+                    a.social-icons__link(href="#")
+                        i.fa.fa-twitter(aria-hidden=true)
+                    
+                    
+
+    .footer__bottom
+        .container-md
+            .footer__copy  Разработка сайта  sayshake

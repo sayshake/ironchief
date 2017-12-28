@@ -1,0 +1,41 @@
+body{
+    font-family: "Open Sans",sans-serif;
+}
+p,span{
+    color:#666;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.container-sm{
+    max-width: 860px;
+    margin: 0 auto;
+}
+.container-md{
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.container-xs{
+    max-width: 680px;
+    margin: 0 auto;
+}
+.page-wrap{
+    position: relative;
+    min-width: 1160px;
+    max-width: 1920px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: auto;
+    border: 1px solid black;
+    
+}
+.is-hidden{
+    display: none!important;
+}
+
+.visually-hidden{
+    text-indent: -9999px;
+    font-size: 0;
+}

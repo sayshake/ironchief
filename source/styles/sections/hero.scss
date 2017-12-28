@@ -1,0 +1,25 @@
+.hero{
+    padding: 45px 0;
+    min-height: 590px;
+    text-align: center;
+    color: #fff;
+    background:#ccc url(../../images/bg-food-sport_full.jpg)  center/cover no-repeat;
+    background-attachment: fixed ;
+    
+    &__about{
+        
+    }
+    
+    &__title{
+       
+    }
+    
+    @media (max-width: 700px) {
+        
+    }
+    
+    .button--text-uppercase{
+        text-transform: uppercase;
+    }
+    
+}

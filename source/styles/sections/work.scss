@@ -1,0 +1,138 @@
+.work{
+    padding: 45px 0;
+    text-align: center ;
+    color: #fff ;
+    background:#ccc url(../../images/bg-how.jpg)  center/cover no-repeat ;
+    
+    &__head-container{
+        display: flex;
+        
+        .icon{
+            margin-right: 15px;
+            align-content: flex-start;
+        }
+        .title__header{
+            text-align: left;
+        }
+        .title__heading{
+            text-align: left;
+        }
+    }
+    &__list{
+        margin-bottom: 60px;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        counter-reset: item;
+    }
+    
+    &__item{
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 33.33333%;
+        &:before{
+            display: inline-block;
+            content: counter(item);
+            font-family: "Open Sans",sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            counter-increment: item;
+            margin-bottom: 10px;
+            border: 2px solid;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 36px;
+        }
+    }
+    
+    &__icon-container{
+        text-align: center;
+        width: 90px;
+        height: 90px;
+        margin-bottom: 20px;
+    }
+    
+    &__name{
+        font-size: 1.652rem;
+    }
+    
+    &__picture{
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__header{
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        font-style: italic;
+        font-family: "Roboto Condensed",sans-serif;
+    }
+    
+    &__description{
+        text-align: center;
+        color: #fff;
+        
+    }
+}
+.service{
+    &-list{
+        display: flex;
+        align-items: flex-start;
+    }
+    &-item{
+        flex: 25%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 30px;
+        counter-reset: item;
+    }
+    &__header{
+        padding: 20px;
+        background-color: #58a543;
+        color: #fff;
+        border: 1px solid #fff;
+        &-text{
+            font-family: "Roboto Condensed",sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 700;
+            color: inherit;
+        }
+    }
+    &__body{
+        padding: 20px; 
+        margin-bottom: 20px;
+        min-height: 218px; 
+        background-color: #fff;
+        
+        &-text{
+            margin: 10px 0;
+            display: block;
+            
+        }
+        
+        &-price{
+            display: block;
+            border-top: 1px solid #666;
+            border-bottom: 1px solid #666;
+            margin : 10px 0;
+            font-size: 48px;
+            font-family: "Roboto Condensed",sans-serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+    }
+    .body-price--range{
+        font-style: inherit;
+        font-size: 16px;            
+    }   
+    
+}

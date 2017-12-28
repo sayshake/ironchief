@@ -1,0 +1,45 @@
+.icon{
+    margin: auto auto;
+    width: 100px;
+    height: 100%;
+}
+
+.icon-burger{
+    @include sprite($burger);
+}
+
+.icon-flower{
+    @include sprite($flower);
+}
+
+.icon-car{
+    @include sprite($car);
+}
+
+.icon-dish{
+    @include sprite($dish);
+}
+.icon-dumbell{
+    @include sprite($dumbell);
+}
+.icon-nose{
+    @include sprite($nose);
+}
+.icon-stomach{
+    @include sprite($stomach);
+}
+.icon-arm{
+    @include sprite($arm);
+}
+.icon-women{
+    @include sprite($women);
+}
+.icon-heart{
+    @include sprite($heart);
+}
+.icon-clock{
+    @include sprite($clock);
+}
+.icon-ironchief-white{
+    @include sprite($ironchef-white);
+}
