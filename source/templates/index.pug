@@ -1,25 +1,14 @@
-doctype html
-html(lang='ru')
-  head
-    meta(charset='UTF-8')
-    meta(http-equiv='X-UA-Compatible', content="IE=edge")
-    meta(name='viewport' content='width=device-width')
-    link(rel="stylesheet" href="css/main.min.css")
-    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet")
-    
+extends sections/layout
+block title 
     title Iron Chief
-  body
-    .page-wrap
+block main
+    section.header
         include sections/header
-        include sections/about
-        include sections/aboutUs
-        include sections/hero
-        include sections/individual-programm
-        include sections/health
-        include sections/promo
-        include sections/goods
-        include sections/work
-        include sections/footer
-    
-    script(src="js/main.min.js")
+    include sections/about
+    include sections/aboutUs
+    include sections/hero
+    include sections/individual-programm
+    include sections/health
+    include sections/promo
+    include sections/goods
+    include sections/work

@@ -30,14 +30,12 @@
     &--yellow{
         background: #f8cd53;
     
-        &:hover {
+        &:hover{
             background: lighten(#f8cd53,7%);
         } 
     }
     
     &--text-uppercase{
         text-transform: uppercase;
-    }
-    
-    
+    } 
 }

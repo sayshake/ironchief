@@ -1,7 +1,14 @@
 .header{
     min-height: 590px;
-    background: #ccc url(../../images/bg.jpg) center  no-repeat;
+    background: #ccc url(../images/bg.jpg) center  no-repeat;
     background-size: cover;
+    
+    &--dynamic{
+        background: url(../images/bg-header.jpg) center center no-repeat #333;
+        height: 115px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
     
     &__logo{
         position: absolute;

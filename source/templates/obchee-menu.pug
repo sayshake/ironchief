@@ -1,0 +1,17 @@
+extends sections/layout
+block title
+    title Obchee menu
+block main
+    section.header--dynamic
+        include sections/header
+    section.promo.promo--adv-2
+        .container-xs
+            .promo__inner
+                .promo__text    
+                    span.promo__name Уникальное предложение от IRONCHEF!
+                    p.promo__info 
+                    |   Оставь видеоотзыв в нашей группе Вконтакте
+                    br
+                    |   и получи скидку 
+                    b 10% на 3 месяца!
+            a.button.button--red.button--text-uppercase(href="../obchee-menu.html") смотреть меню     

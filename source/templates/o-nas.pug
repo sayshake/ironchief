@@ -1,0 +1,16 @@
+extends sections/layout
+block title
+    title o  nas
+block main
+    section.header--dynamic
+        include sections/header 
+    section.promo.promo--adv-5
+        .container-xs
+            .promo__inner
+                .promo__text    
+                    span.promo__name IRONCHEF
+                    p.promo__info 
+                    |Не нужно считать калории, бегать по магазинам, готовить еду 
+                    br
+                    | Осталось только выбрать!
+            a.button.button--red.button--text-uppercase(href="../obchee-menu.html") смотреть меню

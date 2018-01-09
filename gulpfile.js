@@ -24,7 +24,19 @@ gulp.task('server', function() {
 
 /* ------------ Pug compile ------------- */
 gulp.task('templates:compile', function buildHTML() {
-  return gulp.src('source/templates/index.pug')
+    return gulp.src([
+        'source/templates/index.pug',
+        'source/templates/obchee-menu.pug',
+        'source/templates/sportivnoe-menu.pug',
+        'source/templates/zdorovoe-menu.pug',
+        'source/templates/kak-eto-rabotaet.pug',
+        'source/templates/o-nas.pug',
+        'source/templates/otzyvy.pug',
+        'source/templates/blog.pug',
+        'source/templates/kontakty.pug',
+        
+        
+    ])
     .pipe(pug({
       pretty: true
     }))

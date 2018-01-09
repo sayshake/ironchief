@@ -39,6 +39,9 @@
         left: 0;
         right: 0;
     }
+    &__picture{
+        max-width: 100%;    
+    }
     &__item-container{
        position: relative;
         &:hover{

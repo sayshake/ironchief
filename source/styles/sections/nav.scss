@@ -78,16 +78,17 @@
         font-weight: 400;
         transition: .8s ease;
         &:hover {
-            color: darken(#fff,40%);  
+            color: darken(#fff,40%); 
+            
         }
     }
 
 }
 .dropdown:hover .dropdown-content {
     display: block;
-}
- .dropdown-content .nav__link:hover {
-            border-top: 1px solid #fff;
-            border-bottom: 1px solid #fff;
-        }
+    }
+.dropdown:hover .nav__link {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    }
 

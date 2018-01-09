@@ -6,15 +6,19 @@ nav.nav
                             a.nav__link(href="javascript:void(0)")= item 
                                 span.caret
                             .dropdown-content
-                                a.dropdown__link(href="#") Общее меню
-                                a.dropdown__link(href="#") Спортивный рацион
-                                a.dropdown__link(href="#") Меню здорового питания
+                                a.dropdown__link(href="../obchee-menu.html") Общее меню
+                                a.dropdown__link(href="../sportivnoe-menu.html") Спортивный рацион
+                                a.dropdown__link(href="../zdorovoe-menu.html") Меню здорового питания
                     else if item === 'о нас'
                         li.dropdown
                             a.nav__link(href="javascript:void(0)")= item 
                                 span.caret
                             .dropdown-content
-                                    a.dropdown__link(href="#") О нас 
-                                    a.dropdown__link(href="#") Отзывы  
-                    else
-                        a.nav__link(href="#")= item
+                                    a.dropdown__link(href="../o-nas.html") О нас 
+                                    a.dropdown__link(href="../otzyvy.html") Отзывы  
+                    else if item === 'Как это работает'
+                            a.nav__link(href="../kak-eto-rabotaet.html")= item
+                    else if item === 'блог'        
+                            a.nav__link(href="../blog.html")= item
+                    else if item ==='Контакты'        
+                            a.nav__link(href="../kontakty.html")= item

@@ -6,11 +6,6 @@ base {
 
 html {
     box-sizing: border-box;
-
-    @media (max-width: 600px){
-        font-size: 14px;
-        color: #fff;
-    }
 }
 
 *, *:before, *:after {
