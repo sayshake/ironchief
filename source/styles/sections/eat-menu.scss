@@ -1,0 +1,124 @@
+.row{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    &__item{
+        display: flex;
+        .icon{
+            margin-right: 10px;
+        }
+    }
+    .title{
+    padding-bottom: 0;
+    }     
+}
+.header-kachok{
+    margin-bottom: 50px;
+}
+.editable-kachok{
+    text-align: center;
+    padding: 50px 0 50px 0;
+    h2{
+        color:#58a543;
+        margin-bottom: 0;
+    }
+}
+
+.eat-mainbg{
+    min-height: 480px;
+    background:#ccc url(../images/bg-food-meat.jpg)  center/cover no-repeat;
+    &--health{
+        background:#000 url(../images/bg-food-sport.png)  center/cover no-repeat;
+    }
+    &__offset{
+        padding: 20px 0;
+        .icon{
+            margin-right: 0;
+        }
+    }
+}
+.eat-secondarybg{
+    background:#ccc url(../images/bg-food-light.jpg)  center/cover no-repeat ;
+    padding-top: 40px;
+    min-height: 260px;
+}
+.eat-secondary__menu{
+    .nav-tabs{
+        border-bottom: 0;
+    }
+    .nav-item{
+        padding-right: 10px;
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+    .nav-link{
+        padding: 20px;
+        color: #666;
+        border-width: 1px solid transparent;
+        border-radius: 0;
+        background-color:transparent;
+        text-decoration: underline;
+        &:hover{
+           color: #e00201; 
+        }
+        &:active{
+            color: #e00201; 
+            border: 1px solid #e00201;
+            background-color: transparent;
+            text-decoration: none;
+            padding: 20px;    
+        }
+        &:visited, .active, .show{
+            color: #e00201; 
+            border: 1px solid #e00201;
+            background-color: transparent;
+            text-decoration: none;
+            padding: 20px;
+        }
+ 
+    }
+} 
+//reset bootstrap standart styles
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    color: #e00201; 
+    border: 1px solid #e00201;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 20px;
+}
+.tab-content{
+    margin-top: 40px;
+    .tag{
+        margin-left: 10px;
+    }
+}
+.energy-table{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    &__item{
+        flex:1;
+        border-right: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        font-weight: 300;
+        &:first-child{
+            border-left: 1px solid #ccc;    
+        }
+        &--up{
+            font-size: 24px;
+        }
+        &--down{
+            font-size: 12px;
+        }
+    }
+}
+.energy-img{
+    max-width: 420px;
+    &__picture{
+        width: 100%;
+    }
+}

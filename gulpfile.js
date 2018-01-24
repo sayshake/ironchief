@@ -9,7 +9,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
-
 /* -------- Server  -------- */
 gulp.task('server', function() {
   browserSync.init({
@@ -33,9 +32,20 @@ gulp.task('templates:compile', function buildHTML() {
         'source/templates/o-nas.pug',
         'source/templates/otzyvy.pug',
         'source/templates/blog.pug',
-        'source/templates/kontakty.pug',
-        
-        
+        'source/templates/kontakty.pug',  
+        'source/templates/stalnoi-kachok.pug',  
+        'source/templates/myaso-dlya-sportsmena.pug',  
+        'source/templates/sportivnoe-pitanie.pug',  
+        'source/templates/post-pechenki.pug',  
+        'source/templates/gora-myuhc.pug',  
+        'source/templates/relief.pug',  
+        'source/templates/super-suhka.pug',  
+        'source/templates/telo-mechty.pug',  
+        'source/templates/bystroslim-zh.pug',  
+        'source/templates/bystroslim-m.pug',  
+        'source/templates/eda-dlya-zhizni-zh.pug',  
+        'source/templates/eda-dlya-zhizni-m.pug',  
+        'source/templates/zelenyi.pug'  
     ])
     .pipe(pug({
       pretty: true
@@ -55,17 +65,25 @@ gulp.task('styles:compile', function () {
 /* --------  js -------- */
 gulp.task('js', function() {
     return gulp.src([
-            'source/js/init.js',
-            'source/js/validation.js',
-            'source/js/form.js',
-            'source/js/navigation.js',
             'source/js/main.js'
+//            'source/js/jquery.min.js',
+//            'source/js/tether.min.js',
+//            'source/js/bootstrap.min.js'        
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.min.js'))
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'));
+});
+/* --------  js bootrap -------- */
+gulp.task('bootstrap', function() {
+    return gulp.src([
+            'source/bootstrap/jquery.min.js',
+            'source/bootstrap/tether.min.js',
+            'source/bootstrap/bootstrap.min.js'        
+        ])
+        .pipe(gulp.dest('build/bootstrap'));
 });
 
 /* ------------ Sprite ------------- */
@@ -110,7 +128,7 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.series(
   'clean',
-  gulp.parallel('templates:compile', 'styles:compile','js', 'sprite', 'copy'),
+  gulp.parallel('templates:compile', 'styles:compile','js', 'bootstrap','sprite', 'copy'),
   gulp.parallel('watch', 'server')
   )
 );

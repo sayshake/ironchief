@@ -1,0 +1,31 @@
+.breadcrumb{
+    display: flex;
+    font-size: 14px;
+    padding-left: 0;
+    margin: 0;
+    &__container{
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+    &__item{
+        margin-right: 5px;
+        a,a:hover, a:visited, a:focus {
+           color: #666; 
+        }
+        a:hover{
+            border-bottom: 1px solid transparent;
+        }
+    }
+    &__divider{
+        margin-right: 10px;
+        color: #e00201;
+    }
+    &__link{
+        color: #666;
+        text-decoration: none;
+        border-bottom: 1px solid #666;
+        &--none{
+            border-bottom: 1px solid transparent;
+        } 
+    }
+}

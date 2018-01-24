@@ -4,14 +4,60 @@ block title
 block main 
     section.header--dynamic
         include sections/header
+    section.container-md
+        .breadcrumb__container
+            ul.breadcrumb
+                li.breadcrumb__item
+                    a.breadcrumb__link(href="#",title="главная") Главная 
+                li.breadcrumb__divider ●  
+                li.breadcrumb__item
+                    a.breadcrumb__link(href="../portfolio4/o-nas.html",title="о нас") О нас 
+                li.breadcrumb__divider ●
+                li.breadcrumb__item
+                    span.breadcrumb__link.breadcrumb__link--none Отзывы                
+    section.container-sm
+        h1.title.title__content-section Отзывы
+    section
+        .container-sm
+            .individual-programm__decription
+                span.tag.tag-plate.tag-plate-aggressive нам доверяют
+            .individual-programm__decription
+                .individual-programm__decription-col.decription-col--right
+                    .video
+                        iframe(width="380" height="213" src="https://www.youtube.com/embed/rLudVBlN0-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+                    .worker 
+                        .worker__inner.worker__inner--left
+                            .worker__image
+                                img.worker__picture(src="images/videogirl.jpg" alt="picture")
+                            .worker__text    
+                                span.worker__name 
+                                    b Юлия Винс
+                                p.worker__info пауэрлифтер
+                .individual-programm__decription-col.decription-col--right
+                    .video 
+                        iframe(<iframe id="ytplayer" type="text/html" width="380" height="213.75" src="https://www.youtube.com/embed/rLudVBlN0-A" frameborder="0" allowfullscreen>)
+                    .worker 
+                        .worker__inner.worker__inner--left
+                            .worker__image
+                                img.worker__picture(src="images/videoboy.jpg" alt="picture")
+                            .worker__text    
+                                span.worker__name 
+                                    b Сергей Ш.
+                                p.worker__info бодибилдер, ведущий канала на Youtube   
+    section.border-top
+        .container-sm
+            .editable-part
+                h2  Хотите оставить свой отзыв о работе IRONCHEF?
+                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Вскоре ему повстречался коварный составитель.
+                p VK Комментарии...
     section.promo.promo--adv
-        .container-xs
+        .container-sm
             .promo__inner
                 .promo__text    
                     span.promo__name Уникальное предложение от IRONCHEF!
                     p.promo__info 
-                    |   Оставь видеоотзыв в нашей группе Вконтакте
-                    br
-                    |   и получи скидку 
-                    b 10% на 3 месяца!
+                        |   Оставь видеоотзыв в нашей группе Вконтакте
+                        br
+                        |   и получи скидку 
+                        b   10% на 3 месяца!
             a.button.button--red.button--text-uppercase(href="../obchee-menu.html") смотреть меню    

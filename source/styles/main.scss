@@ -1,5 +1,8 @@
 @import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/_modal.scss";
 @import "../../node_modules/normalize.scss/normalize";
+
 //основные файлы
 @import "global/mixins";
 @import "global/fonts";
@@ -9,8 +12,11 @@
 @import "global/sprite";
 @import "global/button";
 @import "global/icons";
+@import "global/modal";
+@import "global/nav";
 //секции проекта
 @import "sections/title";
+@import "sections/breadcrumbs";
 @import "sections/header";
 @import "sections/nav";
 @import "sections/offer";
@@ -20,9 +26,15 @@
 @import "sections/health";
 @import "sections/promo";
 @import "sections/goods";
-@import "sections/individual-programm.scss";
-@import "sections/work.scss";
-@import "sections/footer.scss";
+@import "sections/individual-programm";
+@import "sections/work";
+@import "sections/footer";
+@import "sections/kontakty";
+@import "sections/editable-part";
+@import "sections/obshee-menu";
+@import "sections/eat-menu";
+@import "sections/kak-eto-rabotaet";
+@import "sections/blog";
 
 
 

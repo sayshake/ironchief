@@ -4,14 +4,76 @@ block title
 block main 
     section.header--dynamic
         include sections/header
-    section.promo.promo--adv-simple
+    section.container-md
+        .breadcrumb__container
+            ul.breadcrumb
+                li.breadcrumb__item
+                    a.breadcrumb__link(href="#",title="главная") Главная 
+                li.breadcrumb__divider ●  
+                li.breadcrumb__item
+                    span.breadcrumb__link.breadcrumb__link--none Здоровое меню
+    section.container-sm
+        h1.title.title__content-section Здоровое меню
+    section.container-sm
+        .textarea
+            p Мы готовим для людей, у кого отсутствует физическая активность, например, для работающих в офисе. Это оптимальные рационы 3-разового здорового питания для достижения ваших целей — похудения или поддержания идеального веса.
+    .container-md 
+        ul.offer__list
+            li.offer__item
+                a.offer__item-container
+                    .offer__image
+                        .offer__item-background
+                            span.offer__item-description [4000ккал] 
+                        img.offer__picture(src="images/food3.jpg" alt="picture")
+                    .button.button--green.button--text-uppercase.button--long(href="#") cтальной качок
+            li.offer__item
+                .offer__item-container
+                    .offer__image
+                        .offer__item-background
+                            span.offer__item-description [4000ккал] 
+                        img.offer__picture(src="images/food4.jpg" alt="picture")
+                    .button.button--green.button--text-uppercase.button--long(href="#") гора мыщц
+            li.offer__item
+                a.offer__item-container
+                    .offer__image
+                        .offer__item-background
+                            span.offer__item-description [4000ккал] 
+                        img.offer__picture(src="images/food2.jpg" alt="picture")
+                    .button.button--green.button--text-uppercase.button--long(href="#") рельеф
+            li.offer__item
+                a.offer__item-container
+                    .offer__image
+                        .offer__item-background
+                            span.offer__item-description [4000ккал] 
+                        img.offer__picture(src="images/food1.jpg" alt="picture")
+                    .button.button--green.button--text-uppercase.button--long(href="#") супер сушка
+            li.offer__item
+                .offer__item-container
+                    .offer__image
+                        .offer__item-background
+                            span.offer__item-description [4000ккал] 
+                        img.offer__picture(src="images/food5.jpg" alt="picture")
+                    .button.button--green.button--text-uppercase.button--long(href="#") тело мечты        
+    section
         .container-xs
+            .editable-part
+                h2 Зачем нужен готовый рацион?
+                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.
+            .editable-part.editable-part__info
+                p
+                    b Плюсы готового рациона:
+                ul
+                    li  Правильный баланс веществ поможет вам сохранить форму, здоровье и хорошее настроение, даже если вы не ведете активный образ жизни.
+                    li  Экономия времени — не нужно бегать по магазинам и ломать голову, что приготовить.
+                    li  Мы предлагаем оптимальные рационы для похудения или поддержания веса для мужчин и женщин. 
+                    
+    section.promo.promo--adv-simple
+        .container-sm
             .promo__inner
                 .promo__text    
-                    span.promo__name Уникальное предложение от IRONCHEF!
-                    p.promo__info 
-                    |   Оставь видеоотзыв в нашей группе Вконтакте
-                    br
-                    |   и получи скидку 
-                    b 10% на 3 месяца!
-            a.button.button--red.button--text-uppercase(href="../obchee-menu.html") смотреть меню     
+                    p.promo__info.promo__info--colored
+                        |   Вы заядлый спортсмен или бодибилдер?
+                        br
+                        |   Тогда вам больше подойдут наши рационы спортивного питания! 
+                        
+            a.button.button--red.button--text-uppercase(href="../obchee-menu.html") смотреть спортивные рационы     

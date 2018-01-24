@@ -43,3 +43,33 @@
 .icon-ironchief-white{
     @include sprite($ironchef-white);
 }
+.icon-phone{
+    @include sprite($phone);
+}
+.icon-mail{
+    @include sprite($mail);
+}
+.icon-label{
+    @include sprite($label);
+}
+.icon-bread{
+    @include sprite($bread);
+}
+.icon-leg{
+    @include sprite($leg);
+}
+.icon-pot{
+    @include sprite($pot);
+}
+.icon-dish-white{
+    @include sprite($dish-white);
+}
+.icon-male{
+    @include sprite($male);
+}
+.icon-female{
+    @include sprite($female);
+}
+.icon-recommend{
+    @include sprite($recommend);
+}

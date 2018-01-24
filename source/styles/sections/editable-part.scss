@@ -1,0 +1,63 @@
+.editable-part{
+    text-align: left;
+    line-height: 1.8;
+    &--left-icon{
+        h2, .icon{
+            display: inline-block;
+        }
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    h1,h2,h3,h4,h5{
+        font-family: "Roboto Condensed",sans-serif;
+        line-height: 1.2;
+        font-weight: 800;
+        font-style: italic;
+        color: #454545;
+    }
+    h2{
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+    ol{
+        counter-reset: item;
+    }
+    li{ 
+        padding: 10px 0 10px 0;
+        border-top: 1px solid #ccc;
+        &:last-child{
+            border-bottom: 1px solid #ccc;
+        }
+        &:before{
+            display: block;
+            color: #e00201;
+            font-weight: 700;
+            counter-increment: item;
+            margin-right: 5px;
+            position: relative;
+            left: 0;
+            top: 0;
+            font-size: 200%;
+            content: counter(item);
+        }
+        
+    }
+    &__info{
+        background:#ccc url(../../images/ironchef-pic-small.png) no-repeat ;
+        padding-left: 75px;
+        li{ padding: 0;
+            position: relative;   
+            margin-left: 20px;
+            margin-bottom: 10px;
+            &:before{
+                position: absolute;
+                content: "●";
+                color: #e00201;
+                left: -20px;
+                font-size: 100%;
+            }
+        }
+    }
+}

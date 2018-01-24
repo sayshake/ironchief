@@ -1,17 +1,105 @@
 extends sections/layout
+block script
+    script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37d3d297381117dc47a4d69f9ea468137ac66721cba5ce7c47e3eda4cc2c9391&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;id=mymap")
 block title
     title kontakty
 block main 
     section.header--dynamic
         include sections/header
-    section.promo.promo--adv-simple
+    section.container-md
+        .breadcrumb__container
+            ul.breadcrumb
+                li.breadcrumb__item
+                    a.breadcrumb__link(href="#",title="главная") Главная 
+                li.breadcrumb__divider ●  
+                li.breadcrumb__item
+                    span.breadcrumb__link.breadcrumb__link--none Контакты
+    section.container-sm
+        h1.title.title__content-section Контакты               
+    section
+        .yandex-map#mymap
+            .yandex-map__info
+                .worker__inner.worker__inner--left
+                    .worker__image
+                        .icon.icon-phone
+                    .worker__text    
+                        span.worker__name 
+                            b Сытоедова Снежана,
+                        p.worker__info
+                            |   +7 (985) 123-45-67 
+                            br
+                            |   +7 (495) 874-56-87
+                .worker__inner.worker__inner--left
+                    .worker__image
+                        .icon.icon-label
+                    .worker__text    
+                        span.worker__name 
+                            b Сытоедова Снежана,
+                        p.worker__info
+                        |   м. Павелецкая, Москва,
+                        br
+                        |   ул. Примерная, д. 27
+                .worker__inner.worker__inner--left
+                    .worker__image
+                        .icon.icon-mail
+                    .worker__text    
+                        span.worker__name 
+                            b Сытоедова Снежана
+                        span
+                            a.worker__link(href="index.html")
+                                b  ironchef@ironchef.ru    
+        
+    section.container-sm
+        .aboutUs__decription
+            .aboutUs__decription-col.aboutUs__decription-col--nobordered
+                h3.aboutUs__decription-title Как добраться на машине
+                p.aboutUs__decription-text По Энному шоссе, после заправки «Лукойл», съезд направо на город. Через несколько метров поворот налево. Далее следуйте согласно желтым указателям
+            .aboutUs__decription-col.aboutUs__decription-col--nobordered
+                h3.aboutUs__decription-title Как добраться на общественном транспорте
+                p.aboutUs__decription-text Автобусы 215, 544, 654, 897, 474 до остановки “Улица Чехова”. От остановки - второй дом направо.
+    section.team.border-top
         .container-xs
+            .worker
+                .worker__inner.worker__inner--left
+                    .worker__image
+                        img.worker__picture(src="images/dietolog-1.png" alt="picture")
+                    .worker__text    
+                        span.worker__name Хотите стать нашим поставщиком?
+                        p.worker__info Хороших продуктов много не бывает! Пишите / звоните Виталию Скаредному:
+                        span
+                            a.worker__link(href="mailto:skaredniy@ironchef.ru") 
+                                b   skaredniy@ironchef.ru
+                            span 
+                                b   /+7 (985) 566-89-78                     
+                .worker__inner.worker__inner--left
+                    .worker__image
+                        img.worker__picture(src="images/dietolog-1.png" alt="picture")
+                    .worker__text    
+                        span.worker__name Хотите написать о нас?
+                        p.worker__info Всегда приветствуем СМИ! Пишите / звоните Анне Халявиной:
+                        span
+                            a.worker__link(href="mailto:xalyava-tut@ironchef.ru") 
+                                b   xalyava-tut@ironchef.ru
+                            span  
+                                b   / +7 (985) 123-45-67               
+                .worker__inner.worker__inner--left
+                    .worker__image
+                        img.worker__picture(src="images/dietolog-1.png" alt="picture")
+                    .worker__text    
+                        span.worker__name Хотите сотрудничать?
+                        p.worker__info Мы рады любым формам сотрудничества! Пишите / звоните Яну Разностороннему:
+                        span
+                            a.worker__link(href="mailto:ya_raznostor@ironchef.ru") 
+                                b   ya_raznostor@ironchef.ru 
+                            span 
+                                b   / +7 (985) 586-81-78
+    section.promo.promo--adv-simple
+        .container-sm
             .promo__inner
                 .promo__text    
-                    span.promo__name Уникальное предложение от IRONCHEF!
-                    p.promo__info 
-                    |   Оставь видеоотзыв в нашей группе Вконтакте
-                    br
-                    |   и получи скидку 
-                    b 10% на 3 месяца!
+                    span.promo__name.promo__name--colored IRONCHEF!
+                    p.promo__info.promo__info--colored 
+                        |   Не нужно считать калории, бегать по магазинам, готовить еду.
+                        br
+                        |   Осталось только выбрать! 
             a.button.button--red.button--text-uppercase(href="../obchee-menu.html") смотреть меню     

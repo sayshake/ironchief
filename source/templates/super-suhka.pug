@@ -1,0 +1,421 @@
+extends sections/layout
+block title
+    title sportivnoe-menu
+block main 
+    section.header--dynamic
+        include sections/header
+    section.container-md
+        .breadcrumb__container
+            ul.breadcrumb
+                li.breadcrumb__item
+                    a.breadcrumb__link(href="#",title="главная") Главная 
+                li.breadcrumb__divider ●  
+                li.breadcrumb__item
+                    span.breadcrumb__link.breadcrumb__link--none Спортивное меню
+    section
+        .container-sm.header-kachok
+            .row
+                .row__item
+                    h1.title.title__content-section Супер сушка
+                .row__item.left    
+                    .icon.icon-dumbell
+                    .icon.icon-female
+                    .icon.icon-male
+                .row__item  
+                    a.button.button--red.button--text-uppercase(href="../obchee-menu.html") Заказать меню
+            span [4000 ккал]        
+    .container-sm
+        .textarea
+            p Рацион прекрасно сочетается с интенсивными физическими нагрузками. Лучше всего он подойдет женщинам для набора мышечной массы и активно худеющим мужчинам. Увеличение доли белка в рационе помогает получить максимальный эффект от тренировок.
+    section.about.border-top
+        ul.about__list
+            li.about__item
+                .about__icon-container
+                    .icon.icon-burger.icon-container--size
+                .about__text-container
+                    h3.about__header Программы питания на любой вкус
+                    p.about__description  с учетом ваших пожеланий, особенностей, целей и образа жизни 
+            li.about__item
+                .about__icon-container
+                    .icon.icon-flower.icon-container--size
+                .about__text-container
+                    h3.about__header Полезно, вкусно, разнообразно
+                    p.about__description  Вкусно, как в ресторане! Полезно, как мамины брокколи! Все рационы составлены диетологом 
+            li.about__item
+                .about__icon-container
+                    .icon.icon-car.icon-container--size
+                .about__text-container
+                    h3.about__header Доставка в любое время
+                    p.about__description  Вам некогда принять курьера днем? Мы доставляем еду 24 часа в сутки!
+            li.about__item
+                .about__icon-container
+                    .icon.icon-dish.icon-container--size
+                .about__text-container
+                    h3.about__header Без забот
+                    p.about__description  Мы привозим готовую еду — вам остается только разогреть!
+    .eat-mainbg
+        .container-sm
+            .eat-mainbg__offset
+                .icon.icon-recommend
+    .container-sm
+            .editable-part.editable-kachok
+                h2 5-разовое питание
+                p Пятиразовое питание лучше всего подходит для занимающихся спортом. 
+                h2 Разнообразно!
+                p Блюда не повторяются. 
+                h2 Результат за неделю
+                p Уже через несколько дней вы заметите, как питание положительно влияет на ваше тело.
+    section.container-md                
+        .service 
+            .service-list
+                .service-item
+                    .service__header
+                        span.service__header-text Пробный день
+                    .service__body
+                        span.service__body-text Знакомство с Ironchef по специальной цене
+                        span.service__body-price 
+                            i.body-price--range от 
+                            |  1500 
+                            i.body-price--range руб.
+                        span.service__body-text за день
+                    a.button.button--red.button--text-uppercase.button--long(href="#") заказать
+                .service-item
+                    .service__header
+                        span.service__header-text Разовый
+                    .service__body
+                        span.service__body-text  Цена при заказе блюд на 1-7 дней
+                        span.service__body-price 
+                            i.body-price--range от
+                            |  2500 
+                            i.body-price--range руб.
+                        span.service__body-text в день
+                    a.button.button--red.button--text-uppercase.button--long(href="#") заказать
+                .service-item
+                    .service__header
+                        span.service__header-text Подписка
+                    .service__body
+                        span.service__body-text При заказе блюд на 3 и более недель
+                        span.service__body-price 
+                            i.body-price--range от
+                            |  2500 
+                            i.body-price--range руб.
+                        span.service__body-text в день
+                    a.button.button--red.button--text-uppercase.button--long(href="#") заказать
+                .service-item
+                    .service__header
+                        span.service__header-text Месячный
+                    .service__body
+                        span.service__body-text При заказе блюд на месяц и более
+                        span.service__body-price 
+                            i.body-price--range от
+                            |  1800 
+                            i.body-price--range руб.
+                        span.service__body-text в день
+                    a.button.button--red.button--text-uppercase.button--long(href="#") заказать
+    section.eat-secondarybg
+        .container-sm
+            .goods__text    
+                    span.goods__name Пример меню на первую неделю
+            .eat-secondary__menu        
+                ul.nav.nav-tabs(role="tablist")
+                    li.nav-item
+                        a.nav-link.active(data-toggle="tab" href="#panel1" role="tab") Понедельник
+                    li.nav-item
+                        a.nav-link(data-toggle="tab" href="#panel2"  role="tab") Вторник
+    section
+        .container-sm
+            .tab-content    
+                #panel1.tab-pane.fade.in.active(role="tabpanel")
+                    span.tag.tag-plate.tag-plate-secondary первая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+                    span.tag.tag-plate.tag-plate-secondary вторая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture') 
+                    span.tag.tag-plate.tag-plate-secondary третья еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+                    span.tag.tag-plate.tag-plate-secondary четвертая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+                    span.tag.tag-plate.tag-plate-secondary пятая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')             
+                #panel2.tab-pane.fade(role="tabpanel")
+                    span.tag.tag-plate.tag-plate-secondary первая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет обыкновенный
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 250
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 110
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 30г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 9г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 5г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+                    span.tag.tag-plate.tag-plate-secondary вторая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture') 
+                    span.tag.tag-plate.tag-plate-secondary третья еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+                    span.tag.tag-plate.tag-plate-secondary четвертая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+                    span.tag.tag-plate.tag-plate-secondary пятая еда
+                    .individual-programm__decription
+                        .individual-programm__decription-col.decription-col--right
+                            .editable-part
+                                h2  Омлет с лососем и сыром
+                                p Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.
+                                p
+                                    strong  Ингредиенты:
+                                p лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    
+                        .individual-programm__decription-col.decription-col--right
+                            .energy-table
+                                .energy-table__item
+                                    span.energy-table__item--up 200
+                                    span.energy-table__item--down грамм
+                                .energy-table__item
+                                    span.energy-table__item--up 100
+                                    span.energy-table__item--down ккал
+                                .energy-table__item
+                                    span.energy-table__item--up 28г
+                                    span.energy-table__item--down белки
+                                .energy-table__item
+                                    span.energy-table__item--up 8г
+                                    span.energy-table__item--down жиры
+                                .energy-table__item
+                                    span.energy-table__item--up 3г
+                                    span.energy-table__item--down углев. 
+                            .energy-img
+                                img.energy-img__picture(src='images/energy-food.png' alt='picture')
+    section.promo.promo--adv-4
+        .container-sm
+            .promo__inner
+                .promo__text    
+                    span.promo__name Какая гадость эта ваша заливная рыба!
+                    p.promo__info 
+                        |   Вам не нравятся какие-либо продукты в рационе? Нет проблем!
+                        br
+                        |   Сообщите нам свои предпочтения, и мы скорректируем
+                        br
+                        |   рацион специально для вас!
+            a.button.button--red.button--text-uppercase(href="../obchee-menu.html") Заказать рацион                 

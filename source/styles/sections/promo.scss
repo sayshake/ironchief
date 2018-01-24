@@ -1,13 +1,10 @@
 .promo{
     text-align: center;
-    padding: 30px 0;
+    padding: 50px 0;
     background:#ccc url(../images/bg-food-dark.jpg) center/cover no-repeat;
-    &-inner{
-//        padding-top: 50px;
-//        padding-bottom: 50px;
+    &-inner{ 
     }
     &--adv-simple{
-        min-height: 315px;
         background: #fff;
         border-top: 1px solid;   
         border-top: 1px solid #e0e0e0;
@@ -23,18 +20,33 @@
     &--adv-2{
         background:#ccc url(../images/bg-adv-2.jpg) center/cover no-repeat;
     }
+    &--adv-4{
+        text-align: left;
+        background:#ccc url(../images/bg-adv-4.jpg) center/cover no-repeat;
+    }
     &--adv-5{
         background:#ccc url(../images/bg-adv-5.jpg) center/cover no-repeat;
     }
     &__name{
+        display: block;
         color: #fff;
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 15px;
+        font-style: italic;
+        font-family: "Roboto Condensed",sans-serif;
+        &--colored{
+            color: #666;
+        }
     }
     &__info{
         color: #fff;
         margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 300;
+        &--colored{
+            color: #666;
+        }
     }
     .button{
         margin-top: 30px;

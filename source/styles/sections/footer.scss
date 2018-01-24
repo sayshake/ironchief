@@ -1,4 +1,9 @@
 .footer {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    flex-direction: column;
     background-color: #333;
     border-top: 1px solid #fff;
     font-size: 12px;
@@ -49,6 +54,9 @@
     
     &__social {
         margin-bottom: 5px;
+        a{
+            color:#999;    
+        }
         &-link{
             display: inline-block;
             text-decoration: none;

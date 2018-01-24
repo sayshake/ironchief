@@ -25,12 +25,25 @@
         padding-right: 10px; 
         margin-bottom: 20px;
         border-left: 10px solid #58a543;
+        &--nobordered{
+            border-left:none;    
+        }
     }
     &__decription-title{
+        display: block;
         margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-family: "Roboto Condensed",sans-serif;
+        line-height: 1.2;
+        font-weight: 800;
+        font-style: italic;
+        color: #454545;
     }
     &__decription-text{
         margin-bottom: 0;
+        line-height: 1.8;
+        margin-bottom: 20px;
     }
     
 }

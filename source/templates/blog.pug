@@ -4,10 +4,80 @@ block title
     
 block main
     section.header--dynamic
-            include sections/header
+            include sections/header            
+    section.container-md
+        .breadcrumb__container
+            ul.breadcrumb
+                li.breadcrumb__item
+                    a.breadcrumb__link(href="index.html",title="главная") Главная 
+                li.breadcrumb__divider ●  
+                li.breadcrumb__item
+                    span.breadcrumb__link.breadcrumb__link--none Блог
+    section
+        .container-md
+            .content    
+                .content__aside
+                    .aside__item
+                        h1.aside__item-arrow Записки Стального Шефа
+                        br
+                        p Все, что вы хотели знать о спортивном и здоровом питании и даже больше...
+                    .aside__item
+                        .nav-aside-header
+                            p темы 
+                        ul.nav-aside
+                            li.nav-aside__item
+                                a(href="myaso-dlya-sportsmena.html") Мясо для спортсмена
+                            li.nav-aside__item
+                                a(href="sportivnoe-pitanie.html") Спортивное питание
+                .content__main-content
+                    .content__main-content--header 
+                    .content__main-content--body
+                        .main-content__item
+                            a(href="post-pechenki.html").main-content__item-link
+                                img.main-content__item-img(src="images/food-item.jpg" alt="picture")
+                                span.main-content__item-hover 
+                            p.main-content__item-title
+                                a(href="post-pechenki.html") Можно ли при занятиях спортом позволять себе печеньки?  
+                            p.editable-part Правильный ответ — нет! И не надо канючить. Печеньки - это вселенское зло, которым заманивает вас темная сторона. А сама темная сторона не ест печеньки - именно поэтому зло так привлекательно!
+                            .main-content__item-tag
+                                i.fa.fa-tag
+                                a(href="sportivnoe-pitanie.html").tag.tag-bordered Спортивное питание
+                                |   ,
+                                a(href="myaso-dlya-sportsmena.html").tag.tag-bordered Мясо для спортсмена
+                        .main-content__item
+                            a(href="post-pechenki.html").main-content__item-link
+                                img.main-content__item-img(src="images/food-item.jpg" alt="picture")
+                                span.main-content__item-hover 
+                            p.main-content__item-title
+                                a(href="post-pechenki.html") Можно ли при занятиях спортом позволять себе печеньки?
+                            p.editable-part Правильный ответ — нет! И не надо канючить. Печеньки - это вселенское зло, которым заманивает вас темная сторона. А сама темная сторона не ест печеньки - именно поэтому зло так привлекательно!
+                            .main-content__item-tag
+                                i.fa.fa-tag
+                                a(href="sportivnoe-pitanie.html").tag.tag-bordered Спортивное питание
+                                |   ,
+                                a(href="myaso-dlya-sportsmena.html").tag.tag-bordered Мясо для спортсмена
+                        .main-content__item
+                            a(href="post-pechenki.html").main-content__item-link
+                                img.main-content__item-img(src="images/food-item.jpg" alt="picture")
+                                span.main-content__item-hover 
+                            p.main-content__item-title
+                                a(href="post-pechenki.html") Можно ли при занятиях спортом позволять себе печеньки?  
+                            p.editable-part Правильный ответ — нет! И не надо канючить. Печеньки - это вселенское зло, которым заманивает вас темная сторона. А сама темная сторона не ест печеньки - именно поэтому зло так привлекательно!
+                            .main-content__item-tag
+                                i.fa.fa-tag
+                                a(href="sportivnoe-pitanie.html").tag.tag-bordered Спортивное питание
+                                |   ,
+                                a(href="myaso-dlya-sportsmena.html").tag.tag-bordered Мясо для спортсмена
     section.promo.promo--adv-simple
         .container-sm
-            p Вы регулярно тренируетесь в спортзале или занимаетесь каким-либо видом спорта? Сбалансированные рационы 5-разового питания помогут вам получитьмаксимальный результат от тренировок!
+            .textarea
+                p 
+                    |   Стальной шеф уже подобрал вам 
+                    strong   идеальные рационы питания
+                    br
+                    |   для достижения любой цели — будь то спортивная форма
+                    br
+                    |   или хорошее самочувствие, здоровье и красота.
         .container-md    
             ul.offer__list
                 li.offer__item
@@ -46,5 +116,8 @@ block main
                             img.offer__picture(src="images/woman2.jpg" alt="picture")    
                         .button.button--red.button--text-uppercase.button--long(href="#") тело мечты
         .container-sm
-            p Не нужно считать калории, бегать по магазинам, готовить еду.
-            | Осталось только выбрать!               
+            .textarea
+                p 
+                    |   Не нужно считать калории, бегать по магазинам, готовить еду.
+                    br
+                    |   Осталось только выбрать!               

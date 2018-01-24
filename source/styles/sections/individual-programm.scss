@@ -64,9 +64,16 @@
     font-family: sans-serif;
     line-height: 1.8;
     text-align:right;
+    .worker{
+        line-height: 1.4;
+    }
 }
 .decription-col--right{
     text-align: left;
+}
+.video{
+    display: block;
+    padding: 5px 0;
 }
 .worker {
     text-align: center;
@@ -75,17 +82,34 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        &--left{
+            align-items:center;
+            justify-content: flex-start;
+        }
     }
+    
     &__image{
         padding-right: 20px;
+        
+    }
+    &__picture{
+        border-radius: 50% ;
     }
     &__text {
        text-align: left; 
     }
     &__name{
-        
+       font-size: 16px; 
     }
-    &__info{
-        
+    &__link {
+        color: #e00201;
+        &:hover{
+            color: lighten(#e00201,20%); 
+        }
+        &:visited{
+            color: #e00201;
+        }
     }
+        
+   
 }

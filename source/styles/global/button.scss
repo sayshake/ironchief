@@ -1,12 +1,13 @@
 .button{
     display: inline-block;
-    border-radius:26px;
+    border-radius: 26px;
     padding: 14px 32px;
     text-decoration: none;
     font-weight: 400;
     color: #fff;
     transition: .3s;
     font-size: 16px;
+    font-family: "Roboto Condensed",sans-serif;
 
     &--long{
         display: block;
@@ -38,4 +39,36 @@
     &--text-uppercase{
         text-transform: uppercase;
     } 
+}
+.tag{
+    font-size: 12px;
+    vertical-align: middle;
+    transition: all .3s ease;
+    font-weight: 800;
+    font-family: "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    &-bordered{
+        font-family: "Open-Sans",sans-serif;
+        text-transform: lowercase;
+        color: #666;
+        margin: 5px;
+        border-bottom: 1px solid;
+        &:hover{
+           color: #fe4a49;
+        }
+    }
+    &-plate{
+        padding: 5px 10px;
+        font-style: italic;
+        &-secondary{
+            background-color: #58a543;
+            color: #fff;
+        }
+        &-aggressive{
+            background-color:#e00201;
+            color: #fff;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
 }

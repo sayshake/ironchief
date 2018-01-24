@@ -1,6 +1,9 @@
-- var linkItems = ['БыстроSlim (Ж)','БыстроSlim (Ж)','Еда для жизни (Ж)','Еда для жизни (М)','Зеленый'];
-- var menuItems = ['Стальной качок','Гора мышц','Рельеф','Супер-сушка','Тело мечты'];
-- var linkUrls = ['Блог стального шефа','Отзывы клиентов'];
+- var menuItems2 = ['БыстроSlim (Ж)','БыстроSlim (M)','Еда для жизни (Ж)','Еда для жизни (М)','Зеленый'];
+- var menuItems1 = ['Стальной качок','Гора мышц','Рельеф','Супер-сушка','Тело мечты'];
+- var menuItems3 = ['Блог стального шефа','Отзывы клиентов'];
+- var linkUrls1 =['../stalnoi-kachok.html','../gora-myuhc.html','../relief.html','../super-suhka.html','../telo-mechty.html'];
+- var linkUrls2 =['../bystroslim-zh.html','../bystroslim-m.html','../eda-dlya-zhizni-zh.html','../eda-dlya-zhizni-m.html','../zelenyi.html'];
+- var linkUrls3 =['../blog.html','../otzyvy.html'];
 footer.footer
     .footer__top
         .container-md
@@ -10,33 +13,33 @@ footer.footer
                 .footer-menu 
                     p.footer__text СПОРТИВНОЕ МЕНЮ
                     ul.footer__links
-                        each menu in menuItems
+                        each menu, key in menuItems1
                             li.footer__social
-                                a.footer__social-link(href="javascript:void(0)")=menu
+                                a.footer__social-link(href="" + linkUrls1[key])=menu        
                 .footer-menu
                     p.footer__text МЕНЮ ЗДОРОВОГО ПИТАНИЯ 
                     ul.footer__links
-                        each link in linkItems
+                        each menu, key in menuItems2
                             li.footer__social
-                                a.footer__social-link(href="javascript:void(0)")=link
+                                a.footer__social-link(href="" + linkUrls2[key])=menu
                 .footer-menu           
                     p.footer__text КАК ЭТО РАБОТАЕТ 
                     ul.footer__links
-                        each link in linkUrls
+                        each menu, key in menuItems3
                             li.footer__social
-                                a.footer__social-link(href="javascript:void(0)")=link
+                                a.footer__social-link(href="" + linkUrls3[key])=menu
                 .footer-contacts
                     .phone.phone--footer
                         span.phone__number.phone__number--footer +7 (800) 000-00-00
-                        a.button.header__button.button--red.button--text-uppercase(href="#") Обратный звонок
+                        a.button.header__button.button--red.button--text-uppercase(href="#" data-toggle="modal" data-target="#modal-order") Обратный звонок
                 .footer__social-icons
-                    a.social-icons__link(href="#") 
+                    a.social-icons__link(href="javascript:void(0)") 
                         i.fa.fa-facebook(aria-hidden=true)
-                    a.social-icons__link(href="#")    
+                    a.social-icons__link(href="javascript:void(0)")    
                         i.fa.fa-vk(aria-hidden=true)
-                    a.social-icons__link(href="#")    
+                    a.social-icons__link(href="javascript:void(0)")    
                         i.fa.fa-instagram(aria-hidden=true)
-                    a.social-icons__link(href="#")
+                    a.social-icons__link(href="javascript:void(0)")
                         i.fa.fa-twitter(aria-hidden=true)
                     
                     

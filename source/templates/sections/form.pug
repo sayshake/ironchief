@@ -1,0 +1,45 @@
+#modal-order.modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                .modal-title#exampleModalLabel Оставьте ваши контактные данные и мы вам перезвоним!
+                button.modal-close(type="button" data-dismiss="modal" aria-label="Close")
+                    i.fa.fa-times(aria-hidden="true")      
+            .modal-body
+                form
+                    .modal-container
+                        .modal-container__element
+                            span.input
+                                label.input__label
+                                    i   *
+                                    |   Представьтесь
+                                input.input__texted(type="text" name="name" placeholder="представьтесь" tabindex="1" required)
+                        .modal-container__element
+                            span.input
+                                label.input__label 
+                                    i   *
+                                    |   Ваш телефон
+                                input.input__texted(type="tel" name="phone" placeholder="ваш телефон" tabindex="2" required)
+                        .modal-container__element    
+                            span.input
+                                label.input__label Ваш email
+                                input.input__texted(type="email" name="email" placeholder="ваш email" tabindex="3" required)
+                        .modal-container__element    
+                            span.input
+                                label.input__label Комментарий
+                                textarea.input__texted.input__texted--textarea(type="text")
+                a.button.button--red.button--text-uppercase(href="#") перезвоните мне
+                
+#modal-answer.modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                .modal-title#exampleModalLabel Спасибо
+                button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                    span(aria-hidden="true") &times      
+            .modal-body
+                form
+                    .modal-container
+                       .edit-area
+                            p Мы Вам перезвоним 
+                a.button.button--red.button--text-uppercase(href="#" data-dismiss="modal") закрыть                
